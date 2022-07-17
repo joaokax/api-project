@@ -24,7 +24,7 @@ async def author_create(author_input: AuthorCreateInput):
     except Exception as error:
         raise HTTPException(400, detail=str(error))
 
-
+#Deletar Autor
 @author_router.delete('/delete/{author_id}',
                       description='Remova autores do banco de dados',
                       response_model=StandardOutput,
